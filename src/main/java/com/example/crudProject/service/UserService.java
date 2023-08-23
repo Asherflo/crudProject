@@ -1,15 +1,16 @@
 package com.example.crudProject.service;
 
+import com.example.crudProject.dto.UserDto;
 import com.example.crudProject.model.User;
 
 import java.util.List;
 
 public interface UserService {
-    User createUser(User user);
-    User getUserById(Long id);
+    UserDto createUser(UserDto userDto);
+    UserDto getUserById(Long id);
 
-    List<User> getAllUser();
+    List<UserDto> getAllUser();
 
-    User updateUser( Long id,User user);
+    UserDto updateUser( Long id,UserDto userDto);
     void deleteUser(Long id);
 }
